@@ -1,6 +1,7 @@
 import React from 'react'
 import { cover, actions } from "./styles.module.scss"
 import FlatButton from '../shared/flat_button'
+import { Link } from 'gatsby'
 
 export default function HomeCover() {
   return (
@@ -15,7 +16,11 @@ export default function HomeCover() {
 function Actions() {
   return (
     <div className={actions}>
-      <FlatButton color='var(--primary)' textColor='black'>VIEW DEMOS</FlatButton>
+        <Link to='#demos'>
+          <FlatButton color='var(--primary)' textColor='black'>
+            VIEW DEMOS
+          </FlatButton>
+        </Link>
       <FlatButton color='var(--secondary)' textHoverColor='white'>BUY NOW</FlatButton>
     </div>
   )

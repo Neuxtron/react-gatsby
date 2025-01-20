@@ -17,9 +17,11 @@ export default function Navbar({ hash }: NavbarProps) {
       <Link to="/">{title.toUpperCase()}</Link>
       
       <NavLinks hash={hash} />
-      <OutlinedButton color={isScrolled ? "var(--secondary)" : "var(--primary)"}>
-        <Link to='#contact'>SUPPORT</Link>
-      </OutlinedButton>
+        <Link to='#contact'>
+          <OutlinedButton color={isScrolled ? "var(--secondary)" : "var(--primary)"}>
+            SUPPORT
+          </OutlinedButton>
+        </Link>
     </div>
   )
 }
