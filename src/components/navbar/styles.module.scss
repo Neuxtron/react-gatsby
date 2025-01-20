@@ -1,0 +1,42 @@
+$selectedColor: var(--selected-color, white);
+$color: var(--color, white);
+
+.navbar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  height: 64px;
+  font-size: 1.5rem;
+  padding: 0 128px;
+  color: $color;
+  width: 100%;
+  box-sizing: border-box;
+  transition-duration: 400ms;
+  
+  & > a {
+    color: var(--color);
+    text-decoration: none;
+    transition-duration: 400ms;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    height: 100%;
+    
+    a {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      font-size: .85rem;
+      text-decoration: none;
+      color: $color;
+      padding: 0 32px;
+
+      &:hover {
+        color: var(--selected-color);
+      }
+    }
+  }
+}
