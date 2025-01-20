@@ -1,19 +1,17 @@
 import React from 'react'
 import "../assets/css/global.scss"
-import Navbar from '../components/navbar/navbar'
-import { cover } from "./index.module.scss"
+import Navbar from '../components/shared/navbar/navbar'
 import { PageProps } from 'gatsby'
+import SEO from '../components/shared/seo'
+import HomeCover from '../components/home/home_cover'
 
 export default function HomePage({ location }: PageProps) {
-  console.log(location)
-  
   return (
     <main>
+      <SEO />
       <Navbar hash={location.hash} />
-      <div className={cover}>
-        
-      </div>
-      <h1 style={{ height: "100px" }}>AAAAAAAAAAAAA</h1>
+      <HomeCover />
+      <h1 style={{ height: "100px" }}></h1>
     </main>
   )
 }
