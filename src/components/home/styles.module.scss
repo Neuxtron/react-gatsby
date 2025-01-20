@@ -1,3 +1,5 @@
+@use "../../assets/css/dimens" as dimens;
+
 .cover {
   background-color: #0C0928;
   height: 100vh;
@@ -6,6 +8,7 @@
   align-items: center;
   justify-content: center;
   color: white;
+  padding-top: dimens.$navbarHeight;
 
   h1 {
     font-size: 5rem;
@@ -13,5 +16,13 @@
   }
   p {
     font-size: 2.5rem;
+  }
+
+  .actions {
+    padding-top: 64px;
+
+    & > button:first-child {
+      margin-right: 24px;
+    }
   }
 }

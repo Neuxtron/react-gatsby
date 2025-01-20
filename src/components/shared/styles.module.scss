@@ -18,3 +18,18 @@
     text-decoration: none;
   }
 }
+
+.flatButton {
+  border-radius: 999px;
+  border: 1px solid var(--color, var(--primary));
+  padding: 16px 48px;
+  background-color: var(--color, var(--primary));
+  color: var(--text-color, var(--primary));
+  cursor: pointer;
+  transition-duration: 300ms;
+
+  &:hover {
+    background-color: transparent;
+    color: var(--text-hover-color, var(--primary));
+  }
+}

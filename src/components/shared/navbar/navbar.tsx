@@ -3,17 +3,18 @@ import { navbar } from './styles.module.scss'
 import NavLinks from './navlinks'
 import { Link } from 'gatsby'
 import OutlinedButton from '../outlined_button'
+import useSiteMetadata from '../../../hooks/useSiteMetadata'
 
 interface NavbarProps {
   hash: string
 }
 export default function Navbar({ hash }: NavbarProps) {
   const { style: navbarStyle, isScrolled } = useNavbarStyle()
-  console.log(isScrolled)
+  const title: string = useSiteMetadata().title
   
   return (
     <div className={navbar} style={navbarStyle}>
-      <Link to="/">REACT-GATSBY</Link>
+      <Link to="/">{title.toUpperCase()}</Link>
       
       <NavLinks hash={hash} />
       <OutlinedButton color={isScrolled ? "var(--secondary)" : "var(--primary)"}>

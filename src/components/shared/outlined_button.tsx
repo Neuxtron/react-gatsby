@@ -3,7 +3,7 @@ import { outlinedButton } from "./styles.module.scss"
 
 interface OutlinedButtonProps {
   color: string
-  children: ReactNode
+  children?: ReactNode
 }
 export default function OutlinedButton({ color, children }: OutlinedButtonProps) {
   const style = {

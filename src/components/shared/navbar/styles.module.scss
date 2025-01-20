@@ -1,3 +1,5 @@
+@use "../../../assets/css/dimens" as dimens;
+
 $selectedColor: var(--selected-color, white);
 $color: var(--color, white);
 
@@ -5,7 +7,7 @@ $color: var(--color, white);
   position: fixed;
   display: flex;
   align-items: center;
-  height: 64px;
+  height: dimens.$navbarHeight;
   font-size: 1.5rem;
   padding: 0 128px;
   color: $color;
