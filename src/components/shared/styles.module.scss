@@ -49,3 +49,60 @@
     font-size: 1.1rem;
   }
 }
+
+.footer {
+  display: flex;
+  padding: 64px 128px;
+}
+.footerTitle {
+  margin-right: auto;
+  
+  h1 {
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding-bottom: 18px;
+  }
+  p {
+    color: grey;
+  }
+
+  & > div {
+    display: flex;
+    padding-top: 64px;
+
+    svg {
+      font-size: 1.3rem;
+      color: #444;
+
+      &:nth-child(2) {
+        margin: 0 24px;
+      }
+    }
+  }
+}
+.footerSection {
+  padding: 0 64px;
+  box-sizing: border-box;
+  width: 270px;
+
+  h1 {
+    font-size: 1.2rem;
+    padding-bottom: 12px;
+  }
+  a {
+    display: block;
+    padding: 4px 0;
+    text-decoration: none;
+    color: grey;
+    width: fit-content;
+
+    & > div {
+      width: 0;
+      border-bottom: 1px solid var(--secondary);
+      transition-duration: 300ms;
+    }
+    &:hover > div {
+      width: 100%;
+    }
+  }
+}

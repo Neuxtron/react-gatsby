@@ -5,7 +5,7 @@ import FlatButton from '../shared/flat_button'
 
 export default function Support() {
   return (
-    <div id='support' className={support}>
+    <div id='contact' className={support}>
       <SectionTitle title='Get in touch'>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
       </SectionTitle>
