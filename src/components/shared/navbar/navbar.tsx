@@ -33,11 +33,13 @@ function useNavbarStyle() {
     backgroundColor: "transparent",
     "--selected-color": "var(--primary)",
     "--color": "white",
+    "--shadow-color": "transparent",
   } as CSSProperties
   const scrolledStyle = {
     backgroundColor: "white",
     "--selected-color": "var(--secondary)",
     "--color": "black",
+    "--shadow-color": "#0005",
   } as CSSProperties
 
   useEffect(() => {

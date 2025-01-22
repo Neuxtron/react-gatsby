@@ -10,7 +10,7 @@
 }
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url('../fonts/SourceSans3-SemiBold.ttf');
+  src: url('../fonts/SourceSans3-Bold.ttf');
   font-weight: bold;
 }
 @font-face {
@@ -22,10 +22,12 @@
 * {
   margin: 0;
   padding: 0;
+  z-index: 0;
 }
 body {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
+  color: #1D1D1D;
 }
 
 :root {

@@ -14,6 +14,8 @@ $color: var(--color, white);
   width: 100%;
   box-sizing: border-box;
   transition-duration: 400ms;
+  z-index: 1;
+  box-shadow: 0 0 10px var(--shadow-color);
   
   & > a {
     color: var(--color);
