@@ -3,7 +3,6 @@ import SectionTitle from '../shared/section_title'
 import { useStaticQuery, graphql } from 'gatsby'
 import { pricingsListView } from "./styles.module.scss"
 import htmlParser from "html-react-parser"
-import { FaCheck } from "react-icons/fa6"
 import FlatButton from '../shared/flat_button'
 import OutlinedButton from '../shared/outlined_button'
 
