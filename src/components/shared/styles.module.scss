@@ -28,3 +28,24 @@
     color: var(--text-hover-color, var(--primary));
   }
 }
+
+.sectionTitle {
+  padding: 128px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-size: 2.9rem;
+  }
+  hr {
+    margin-bottom: 32px;
+    width: 64px;
+    height: 0;
+  }
+  p {
+    text-align: center;
+    width: 700px;
+    font-size: 1.1rem;
+  }
+}

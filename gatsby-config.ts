@@ -16,7 +16,14 @@ const config: GatsbyConfig = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `projects`,
-        path: `${__dirname}/src/demos/`,
+        path: `${__dirname}/src/data/demos/`,
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `features`,
+        path: `${__dirname}/src/data/features/`,
       }
     }
   ],
