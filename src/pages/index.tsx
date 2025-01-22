@@ -7,6 +7,7 @@ import HomeCover from '../components/home/home_cover'
 import PreBuiltDemos from '../components/home/pre_built_demos'
 import Features from '../components/home/features'
 import Pricing from '../components/home/pricing'
+import Support from '../components/home/support'
 
 export default function HomePage({ location }: PageProps) {
   return (
@@ -17,6 +18,8 @@ export default function HomePage({ location }: PageProps) {
       <PreBuiltDemos />
       <Features />
       <Pricing />
+      {/* IDEA: testimony */}
+      <Support />
     </main>
   )
 }
