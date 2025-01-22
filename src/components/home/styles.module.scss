@@ -111,3 +111,50 @@
     }
   }
 }
+
+.pricingsListView {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 64px 32px;
+
+  & > div {
+    width: 330px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:hover hr { width: 100%; }
+
+    h1 { font-size: var(--heading-size); }
+    li {
+      list-style: none;
+      padding: 3px 0;
+      padding-left: 4px;
+
+      &::before {
+        content: "✓  ";
+      }
+    }
+    hr {
+      width: 48px;
+      margin-bottom: 16px;
+      margin-top: 8px;
+      transition-duration: 600ms;
+    }
+    p {
+      font-weight: bold;
+      
+      span { font-size: 3.7rem; }
+    }
+    del { color: grey; }
+    button {
+      padding: 12px 64px;
+      margin-top: 32px;
+      border-width: 2px;
+    }
+  }
+}

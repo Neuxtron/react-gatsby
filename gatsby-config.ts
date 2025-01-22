@@ -25,7 +25,14 @@ const config: GatsbyConfig = {
         name: `features`,
         path: `${__dirname}/src/data/features/`,
       }
-    }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pricings`,
+        path: `${__dirname}/src/data/pricings/`,
+      }
+    },
   ],
 }
 
